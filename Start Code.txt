@@ -1,3 +1,4 @@
+# for apple company: 
 import pandas as pd
 import yfinance as yf
 
@@ -13,3 +14,20 @@ data.reset_index(inplace=True)
 # Display the data
 data
 
+############# for Tesla company:
+
+
+import pandas as pd
+import yfinance as yf
+
+# Define the ticker symbol
+ticker = "TSLA"
+
+# Download data from Yahoo Finance
+data = yf.download(ticker, start="2019-01-01", end="2024-12-31")
+
+# Reset the index to make the date a column
+data.reset_index(inplace=True)
+
+# Display the data
+data
